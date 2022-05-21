@@ -1,6 +1,5 @@
-blacklisted_word = "shit"
+blacklisted_words = ["shit", "ass", "fuck"]
 statement = input("Send message: ")
-if(blacklisted_word in statement):
-    print("You have been muted for: using a blacklisted word")
-else:
-    print(statement)
+for blacklisted_word in blacklisted_words:
+    if(blacklisted_word in statement):
+        print("you have been muted for saying a blacklisted word")
